@@ -11,8 +11,8 @@ import os
 
 LOGIN_URL = os.environ.get("LOGIN_URL", "https://apiisp.saas.cd/api/apps/auth/login/")
 SYNC_URL = os.environ.get("SYNC_URL", "https://apiisp.saas.cd/api/apps/isp_stage/sync-isp-paiements/")
-USERNAME = os.environ.get("USERNAME", "chargerecherchebiologie@email.com")
-PASSWORD = os.environ.get("PASSWORD", "1234")
+USERNAME = os.environ.get("USERNAME", "Admin")
+PASSWORD = os.environ.get("PASSWORD", "admin1")
 INTERVAL_SECONDS = int(os.environ.get("INTERVAL_SECONDS", 5 * 60))  # 5 minutes par défaut
 
 # Dates de début et fin pour le script historique
