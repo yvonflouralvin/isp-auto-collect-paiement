@@ -1,6 +1,7 @@
 import requests
 from datetime import date
 import time
+import os
 
 # -----------------------------
 # Config depuis variables d'environnement
