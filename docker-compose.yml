@@ -4,11 +4,11 @@ services:
   historical-sync:
     build: .
     container_name: historical_sync
-    command: python scripts/historical_sync.py
+    command: python scripts/main.py
     restart: "no"  # Une seule exécution
 
   daily-sync:
     build: .
     container_name: daily_sync
-    command: python scripts/daily_sync.py
+    command: python scripts/today.py
     restart: always  # Boucle infinie
