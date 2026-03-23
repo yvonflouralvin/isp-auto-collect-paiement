@@ -1,13 +1,13 @@
 version: "3.9"
 
 services:
-  historical-sync:
+  historical-sync-dev:
     build: .
     container_name: historical_sync
     command: python scripts/main.py
     restart: "no"  # Une seule exécution
 
-  daily-sync:
+  daily-sync-dev:
     build: .
     container_name: daily_sync
     command: python scripts/today.py
