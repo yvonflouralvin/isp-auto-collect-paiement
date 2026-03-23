@@ -3,12 +3,12 @@ version: "3.9"
 services:
   historical-sync-dev:
     build: .
-    container_name: historical_sync
+    container_name: historical_sync_dev
     command: python scripts/main.py
     restart: "no"  # Une seule exécution
 
   daily-sync-dev:
     build: .
-    container_name: daily_sync
+    container_name: daily_sync_dev
     command: python scripts/today.py
     restart: always  # Boucle infinie
