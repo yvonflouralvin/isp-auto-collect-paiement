@@ -17,7 +17,7 @@ INTERVAL_SECONDS = int(os.environ.get("INTERVAL_SECONDS", 5 * 60))  # 5 minutes 
 
 # Dates de début et fin pour le script historique
 START_DATE_STR = os.environ.get("START_DATE", "2026-01-01")
-END_DATE_STR = os.environ.get("END_DATE", "2026-03-30")
+END_DATE_STR = os.environ.get("END_DATE", "2026-12-31")
 
 # Convertir les strings en objets date
 START_DATE = date.fromisoformat(START_DATE_STR)
