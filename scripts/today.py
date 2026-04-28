@@ -52,9 +52,9 @@ def sync_today_payments():
 def main():
     print("🚀 Démarrage du script de collecte des paiements du jour...")
     #token = get_access_token()
-    if not token:
-        print("Impossible de récupérer le token, arrêt du script.")
-        return
+    #if not token:
+    #    print("Impossible de récupérer le token, arrêt du script.")
+    #    return
 
     while True:
         try:
