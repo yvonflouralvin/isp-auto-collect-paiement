@@ -31,7 +31,8 @@ def get_access_token():
 # -----------------------------
 # Collecte des paiements pour aujourd'hui
 # -----------------------------
-def sync_today_payments(token):
+def sync_today_payments():
+    token = get_access_token()
     headers = {"Authorization": f"Bearer {token}"}
     today_str = date.today().strftime("%Y-%m-%d")
     payload = {"date": today_str}
@@ -50,14 +51,14 @@ def sync_today_payments(token):
 # -----------------------------
 def main():
     print("🚀 Démarrage du script de collecte des paiements du jour...")
-    token = get_access_token()
+    #token = get_access_token()
     if not token:
         print("Impossible de récupérer le token, arrêt du script.")
         return
 
     while True:
         try:
-            sync_today_payments(token)
+            sync_today_payments()
         except Exception as e:
             print("Erreur lors de la collecte :", e)
 
